@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Popins';
+}
+.flex-container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.flex-container, #logo {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#left {
+  background-image: url("./background.jpg");
+  background-position: center;
+  background-size: auto;
+  width: 40vw;
+}
+
+#logo {
+  justify-content: center;
+  align-items: center;
+  padding: 3vh 0;
+  gap: 1vw;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
+  top: 20vh;
+}
+
+#logo-img {
+  height: 8vw;
+}
+
+#logo-txt {
+  color: #fff;
+}
+
+#right {
+  display: flex;
+  flex-flow: column nowrap;
+  /* align-items: center; */
+  background-color: rgb(20, 20, 20);
+  width: 60vw;
+  color: white;
+  padding-top: 10%;
+}
+
+.right-padding {
+  padding: 0 2rem;
+  /* width: 90%; */
+}
+
+#dummy-txt {
+  font-weight: 550;
+  font-size: 1.3rem;
+}
+
+#dummy-txt > * {
+  margin: 2rem 0;
+}
+
+#sign-up-form {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: rgb(50, 50, 50);
+  /* gap: 1rem 6rem; */
+  gap: 25px;
+  padding-top: 1.2rem;
+  padding-bottom: 1.3rem;
+}
+
+#form-header {
+  width: 100%;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.form-element {
+  display: flex;
+  flex-flow: column nowrap;
+  /* gap: 4; */
+  width: 40%;
+}
+
+.form-element > input {
+  height: 1.7rem;
+  font-size: 1rem;
+  background-color: rgb(70, 70, 70);
+  color: #fff;
+  border: 2px solid #564d9d;
+  outline: none;
+}
+
+.form-element > input:focus {
+  border: 1px solid #337abe;
+  border-radius: 3px;
+  outline: none;
+}
+
+.label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.create-account-button {
+  width: 30%;
+  height: 15%;
+  font-size: medium;
+  margin: 2rem 2rem;
+  background-color: #337abe;
+  border: 2px solid #337abe;
+  border-radius: 9px;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.create-account-button:hover {
+  background-color: rgb(20, 20, 20);
+  color: #337abe;
+  border: 2px solid #337abe
+}
+
+#log-in-txt {
+  margin-top: 1.3rem;
+}
+
+.url {
+  color: #0180f7;
+  text-decoration-line: none;
+  font-weight: 700;
+}
+
+.url:hover {
+  color: #337abe;
+}
